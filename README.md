@@ -12,6 +12,8 @@ Basically a copy of BoltsSwift with these additional features.
 - Warn and check if you didn't handle potential error.
 - Simplified interface. Only 3 methods. No more bunch of 
   `continueWith...` methods.
+- Major class name is not `Task` to avoid name ambiguity with 
+  `Foundation.Task` in Swift 3.
 
 But this library requires you to always designated execution queue.
 
