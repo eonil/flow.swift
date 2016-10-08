@@ -2,6 +2,9 @@ Flow
 ====
 Hoon H.
 
+[![Build Status](https://api.travis-ci.org/eonil/flow.swift.svg)](https://travis-ci.org/eonil/flow.swift)
+
+
 This is Flow version 3.
 
 Basically a copy of BoltsSwift with these additional features.
