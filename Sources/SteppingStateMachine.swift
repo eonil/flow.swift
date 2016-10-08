@@ -103,19 +103,19 @@ extension SteppingStateMachine {
     }
 }
 
-extension SteppingStateMachine {
-    mutating func validateDeinit() {
-        switch state {
-        case .unscheduledAndUnsignaled:
-            SteppingErrorReporting.handler(.badStateOnDeinit)
-        case .unscheduledButSignaled(_):
-            // Fine. Just a terminal flow.
-            break
-        case .unsignaledButScheduled(_):
-            SteppingErrorReporting.handler(.badStateOnDeinit)
-        case .processingOrDisposed:
-            // Fine.
-            break
-        }
-    }
-}
+//extension SteppingStateMachine {
+//    mutating func validateDeinit() {
+//        switch state {
+//        case .unscheduledAndUnsignaled:
+//            SteppingErrorReporting.handler(.badStateOnDeinit)
+//        case .unscheduledButSignaled(_):
+//            // Fine. Just a terminal flow.
+//            break
+//        case .unsignaledButScheduled(_):
+//            SteppingErrorReporting.handler(.badStateOnDeinit)
+//        case .processingOrDisposed:
+//            // Fine.
+//            break
+//        }
+//    }
+//}
