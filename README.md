@@ -1,3 +1,7 @@
+**ABANDONED** I made alsmot equal replacement: https://github.com/eonil/flow9.swift
+
+
+
 Flow
 ====
 Hoon H.
